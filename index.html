@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>John Mario Muñoz Lopera | Rectoría UdeA 2026-2029</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Montserrat:wght@800;900&display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        verde: "#0d6939",
+                        morado: "#5f57a2",
+                        blanco: "#ffffff",
+                        verde_oscuro: "#084d29", /* Un verde aún más profundo para fondos */
+                        morado_oscuro: "#48427a", /* Un morado más profundo */
+                    },
+                    fontFamily: {
+                        display: ["Montserrat", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #084d29;
+            /* Fondo oscuro base */
+            color: #ffffff;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #084d29;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #5f57a2;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ffffff;
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-morado selection:text-blanco">
+
+    <!-- Navegación: Blanca para contrastar el logo que tiene texto verde/morado -->
+    <nav
+        class="sticky top-0 z-50 bg-blanco/95 backdrop-blur-md border-b border-verde/20 shadow-lg transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <!-- Uso del logo específico de la carpeta imágenes -->
+                <img src="../diseños logos colores/logos aplicados_Mesa de trabajo 1 (1).png" alt="Logo John Mario"
+                    class="h-40 object-contain hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-bold text-sm tracking-widest uppercase text-verde">
+                <a class="hover:text-morado transition-colors duration-300" href="#inicio">Inicio</a>
+                <a class="hover:text-morado transition-colors duration-300" href="#propuestas">Propuestas</a>
+                <a class="hover:text-morado transition-colors duration-300" href="#trayectoria">Trayectoria</a>
+                <a class="hover:text-morado transition-colors duration-300" href="#activismo">Activismo</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a class="bg-morado text-blanco px-8 py-3 rounded-full font-bold hover:bg-verde hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-[0_5px_15px_rgba(95,87,162,0.4)] uppercase text-sm tracking-wider"
+                    href="#contacto">
+                    Únete
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center pt-10 bg-cover bg-center bg-fixed"
+        style="background-image: url('perfill-jmmx2.png');" id="inicio">
+        <div class="absolute inset-0 bg-verde/95 mix-blend-multiply"></div> <!-- Overlay muy oscuro y profundo -->
+        <div class="absolute inset-0 bg-gradient-to-t from-verde_oscuro to-transparent"></div>
+
+        <!-- Elementos decorativos animados -->
+        <div
+            class="absolute top-20 right-20 w-72 h-72 bg-morado/40 rounded-full blur-[100px] animate-pulse-slow pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center py-20 relative z-10">
+            <div class="order-2 lg:order-1 text-blanco">
+                <span
+                    class="inline-flex items-center gap-2 py-2 px-5 rounded-full border border-blanco/20 bg-blanco/10 font-bold text-xs uppercase tracking-widest mb-8 backdrop-blur-sm animate-float">
+                    <span class="w-2 h-2 rounded-full bg-morado animate-pulse"></span>
+                    Rectoría UdeA 2026 - 2029
+                </span>
+                <h1 class="text-6xl md:text-8xl font-display font-black leading-[0.95] mb-8 drop-shadow-2xl">
+                    JOHN MARIO<br />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-morado to-[#8c85c2]">MUÑOZ</span>
+                </h1>
+                <p
+                    class="text-xl max-w-lg mb-12 leading-relaxed font-light border-l-4 border-morado pl-6 opacity-90 text-blanco/90">
+                    "Por una Universidad comprometida con la ciencia para la transformación social".
+                </p>
+                <div class="flex flex-wrap gap-5">
+                    <button
+                        class="bg-morado text-blanco px-8 py-4 rounded-xl font-bold text-lg hover:bg-blanco hover:text-verde hover:scale-105 hover:-translate-y-1 transition-all duration-300 flex items-center gap-3 shadow-[0_10px_25px_rgba(95,87,162,0.6)]">
+                        Ver Plan Rectoral
+                        <span class="material-icons">arrow_forward</span>
+                    </button>
+                    <button
+                        class="border-2 border-blanco/50 text-blanco px-8 py-4 rounded-xl font-bold text-lg hover:bg-blanco hover:text-verde hover:border-blanco transition-all duration-300">
+                        Conoce más
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative order-1 lg:order-2 animate-float" style="animation-delay: 1s;">
+                <!-- Contenedor de imagen perfil limpia -->
+                <div class="absolute inset-0 bg-morado/30 rounded-full blur-[100px] scale-90"></div>
+                <div
+                    class="relative rounded-[2rem] p-3 border border-blanco/20 bg-blanco/5 backdrop-blur-md shadow-2xl">
+                    <img alt="John Mario Muñoz Lopera"
+                        class="relative w-full aspect-square object-cover rounded-[1.5rem] brightness-110 contrast-125"
+                        src="perfill-jmmig.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas: Fondo Morado Oscuro -->
+    <section class="bg-morado_oscuro py-16 border-y border-blanco/10 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 relative z-10">
+            <div class="text-center group hover:-translate-y-2 transition-transform duration-300">
+                <p class="text-blanco text-5xl font-black mb-2 group-hover:text-verde transition-colors drop-shadow-lg">
+                    10+</p>
+                <p
+                    class="text-blanco/70 text-xs font-bold uppercase tracking-[0.2em] border-t border-blanco/20 pt-4 inline-block">
+                    Libros Publicados</p>
+            </div>
+            <div class="text-center group hover:-translate-y-2 transition-transform duration-300">
+                <p class="text-blanco text-5xl font-black mb-2 group-hover:text-verde transition-colors drop-shadow-lg">
+                    3</p>
+                <p
+                    class="text-blanco/70 text-xs font-bold uppercase tracking-[0.2em] border-t border-blanco/20 pt-4 inline-block">
+                    Años como Decano</p>
+            </div>
+            <div class="text-center group hover:-translate-y-2 transition-transform duration-300">
+                <p class="text-blanco text-5xl font-black mb-2 group-hover:text-verde transition-colors drop-shadow-lg">
+                    100%</p>
+                <p
+                    class="text-blanco/70 text-xs font-bold uppercase tracking-[0.2em] border-t border-blanco/20 pt-4 inline-block">
+                    Defensa Pública</p>
+            </div>
+            <div class="text-center group hover:-translate-y-2 transition-transform duration-300">
+                <p class="text-blanco text-5xl font-black mb-2 group-hover:text-verde transition-colors drop-shadow-lg">
+                    24/7</p>
+                <p
+                    class="text-blanco/70 text-xs font-bold uppercase tracking-[0.2em] border-t border-blanco/20 pt-4 inline-block">
+                    Compromiso UdeA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan de Gobierno: Fondo Verde Oscuro -->
+    <section class="py-24 bg-verde_oscuro relative" id="propuestas">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-20 text-center">
+                <span
+                    class="text-blanco bg-morado px-4 py-2 rounded-full text-sm font-bold tracking-[0.3em] uppercase mb-6 inline-block shadow-lg">Plan
+                    2026-2029</span>
+                <h2 class="text-4xl md:text-5xl font-display font-black text-blanco mb-6 drop-shadow-md">Por una
+                    Universidad comprometida con la <br><span class="text-morado">ciencia para la transformación
+                        social</span></h2>
+                <p class="text-blanco/70 text-lg max-w-3xl mx-auto font-light">Enfoques territoriales, de diversidades,
+                    participativos y de género, dividiéndose en nueve retos agrupados en tres categorías.</p>
+                <div class="mt-10">
+                    <a href="plangobierno.pdf" target="_blank"
+                        class="inline-flex items-center gap-2 bg-blanco text-verde_oscuro px-8 py-4 rounded-xl font-bold hover:bg-morado hover:text-blanco transition-all duration-300 shadow-xl hover:shadow-morado/30">
+                        <span class="material-icons">picture_as_pdf</span>
+                        Leer Plan de Gobierno Completo
+                    </a>
+                </div>
+            </div>
+
+            <!-- 1. Retos Estratégicos -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-display font-bold text-blanco mb-4 border-l-4 border-morado pl-4">1. Retos
+                    Estratégicos</h3>
+                <p class="text-blanco/70 mb-8 max-w-4xl text-lg">Son los pilares políticos y administrativos para
+                    posicionar a la Universidad frente a la sociedad y garantizar su viabilidad.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Tarjeta 1 -->
+                    <div
+                        class="group bg-blanco/5 backdrop-blur-lg p-1 rounded-2xl border border-blanco/10 hover:border-morado hover:-translate-y-3 transition-all duration-500 shadow-xl">
+                        <div class="h-full p-8 rounded-xl relative overflow-hidden">
+                            <div
+                                class="absolute -right-10 -top-10 w-40 h-40 bg-morado/20 rounded-full blur-2xl group-hover:bg-morado/40 transition-colors">
+                            </div>
+                            <div
+                                class="w-16 h-16 bg-morado text-blanco rounded-xl flex items-center justify-center mb-8 shadow-[0_5px_15px_rgba(95,87,162,0.4)] group-hover:scale-110 transition-transform duration-300">
+                                <span class="material-icons text-3xl">science</span>
+                            </div>
+                            <h4
+                                class="text-xl font-bold text-blanco mb-4 font-display group-hover:text-morado transition-colors">
+                                Ciencia transformadora</h4>
+                            <p class="text-blanco/70 leading-relaxed text-sm">Articulación de misiones para resolver
+                                problemas públicos, impulsar ciencia ciudadana y fortalecer la Estación Spin-Off como
+                                innovación.</p>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 2 -->
+                    <div
+                        class="group bg-blanco/5 backdrop-blur-lg p-1 rounded-2xl border border-blanco/10 hover:border-morado hover:-translate-y-3 transition-all duration-500 shadow-xl">
+                        <div class="h-full p-8 rounded-xl relative overflow-hidden">
+                            <div
+                                class="absolute -right-10 -top-10 w-40 h-40 bg-morado/20 rounded-full blur-2xl group-hover:bg-morado/40 transition-colors">
+                            </div>
+                            <div
+                                class="w-16 h-16 bg-morado text-blanco rounded-xl flex items-center justify-center mb-8 shadow-[0_5px_15px_rgba(95,87,162,0.4)] group-hover:scale-110 transition-transform duration-300">
+                                <span class="material-icons text-3xl">account_balance</span>
+                            </div>
+                            <h4
+                                class="text-xl font-bold text-blanco mb-4 font-display group-hover:text-morado transition-colors">
+                                Prospectiva financiera</h4>
+                            <p class="text-blanco/70 leading-relaxed text-sm">Exigir financiación justa, crear Modelo
+                                2026-2040 y diversificar ingresos sin afectar derechos laborales o calidad académica.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 3 -->
+                    <div
+                        class="group bg-blanco/5 backdrop-blur-lg p-1 rounded-2xl border border-blanco/10 hover:border-morado hover:-translate-y-3 transition-all duration-500 shadow-xl">
+                        <div class="h-full p-8 rounded-xl relative overflow-hidden">
+                            <div
+                                class="absolute -right-10 -top-10 w-40 h-40 bg-morado/20 rounded-full blur-2xl group-hover:bg-morado/40 transition-colors">
+                            </div>
+                            <div
+                                class="w-16 h-16 bg-morado text-blanco rounded-xl flex items-center justify-center mb-8 shadow-[0_5px_15px_rgba(95,87,162,0.4)] group-hover:scale-110 transition-transform duration-300">
+                                <span class="material-icons text-3xl">groups</span>
+                            </div>
+                            <h4
+                                class="text-xl font-bold text-blanco mb-4 font-display group-hover:text-morado transition-colors">
+                                Diálogo y democracia</h4>
+                            <p class="text-blanco/70 leading-relaxed text-sm">Gobierno democrático, voto ponderado,
+                                Pacto de Convivencia y bienestar integral (salud mental, apoyo alimentario).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Retos Misionales -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-display font-bold text-blanco mb-4 border-l-4 border-morado pl-4">2. Retos
+                    Misionales</h3>
+                <p class="text-blanco/70 mb-8 max-w-4xl text-lg">Corresponden a la razón de ser académica de la
+                    Universidad: docencia, investigación y extensión.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Tarjeta 1 -->
+                    <div
+                        class="group bg-blanco/5 backdrop-blur-lg p-1 rounded-2xl border border-blanco/10 hover:border-morado hover:-translate-y-3 transition-all duration-500 shadow-xl">
+                        <div class="h-full p-8 rounded-xl relative overflow-hidden">
+                            <div
+                                class="absolute -right-10 -top-10 w-40 h-40 bg-morado/20 rounded-full blur-2xl group-hover:bg-morado/40 transition-colors">
+                            </div>
+                            <div
+                                class="w-16 h-16 bg-morado text-blanco rounded-xl flex items-center justify-center mb-8 shadow-[0_5px_15px_rgba(95,87,162,0.4)] group-hover:scale-110 transition-transform duration-300">
+                                <span class="material-icons text-3xl">school</span>
+                            </div>
+                            <h4
+                                class="text-xl font-bold text-blanco mb-4 font-display group-hover:text-morado transition-colors">
+                                Docencia y calidad</h4>
+                            <p class="text-blanco/70 leading-relaxed text-sm">Incorporar IA, Big Data y robótica ética.
+                                Promover formación docente, posgrados y modelos multimodales y virtuales.</p>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 2 -->
+                    <div
+                        class="group bg-blanco/5 backdrop-blur-lg p-1 rounded-2xl border border-blanco/10 hover:border-morado hover:-translate-y-3 transition-all duration-500 shadow-xl">
+                        <div class="h-full p-8 rounded-xl relative overflow-hidden">
+                            <div
+                                class="absolute -right-10 -top-10 w-40 h-40 bg-morado/20 rounded-full blur-2xl group-hover:bg-morado/40 transition-colors">
+                            </div>
+                            <div
+                                class="w-16 h-16 bg-morado text-blanco rounded-xl flex items-center justify-center mb-8 shadow-[0_5px_15px_rgba(95,87,162,0.4)] group-hover:scale-110 transition-transform duration-300">
+                                <span class="material-icons text-3xl">lightbulb</span>
+                            </div>
+                            <h4
+                                class="text-xl font-bold text-blanco mb-4 font-display group-hover:text-morado transition-colors">
+                                Investigación aplicada</h4>
+                            <p class="text-blanco/70 leading-relaxed text-sm">Investigación en posconflicto, género y
+                                medioambiente. Sistema de indicadores de impacto social para políticas públicas.</p>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 3 -->
+                    <div
+                        class="group bg-blanco/5 backdrop-blur-lg p-1 rounded-2xl border border-blanco/10 hover:border-morado hover:-translate-y-3 transition-all duration-500 shadow-xl">
+                        <div class="h-full p-8 rounded-xl relative overflow-hidden">
+                            <div
+                                class="absolute -right-10 -top-10 w-40 h-40 bg-morado/20 rounded-full blur-2xl group-hover:bg-morado/40 transition-colors">
+                            </div>
+                            <div
+                                class="w-16 h-16 bg-morado text-blanco rounded-xl flex items-center justify-center mb-8 shadow-[0_5px_15px_rgba(95,87,162,0.4)] group-hover:scale-110 transition-transform duration-300">
+                                <span class="material-icons text-3xl">handshake</span>
+                            </div>
+                            <h4
+                                class="text-xl font-bold text-blanco mb-4 font-display group-hover:text-morado transition-colors">
+                                Extensión territorial</h4>
+                            <p class="text-blanco/70 leading-relaxed text-sm">Articular docencia/investigación con
+                                problemas sociales. Participar en políticas públicas y afianzar lazos con egresados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Retos Transversales -->
+            <div>
+                <h3 class="text-3xl font-display font-bold text-blanco mb-4 border-l-4 border-morado pl-4">3. Retos
+                    Transversales</h3>
+                <p class="text-blanco/70 mb-8 max-w-4xl text-lg">Son ejes que atraviesan e integran todo el quehacer
+                    universitario.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Tarjeta 1 -->
+                    <div
+                        class="group bg-blanco/5 backdrop-blur-lg p-1 rounded-2xl border border-blanco/10 hover:border-morado hover:-translate-y-3 transition-all duration-500 shadow-xl">
+                        <div class="h-full p-8 rounded-xl relative overflow-hidden">
+                            <div
+                                class="absolute -right-10 -top-10 w-40 h-40 bg-morado/20 rounded-full blur-2xl group-hover:bg-morado/40 transition-colors">
+                            </div>
+                            <div
+                                class="w-16 h-16 bg-morado text-blanco rounded-xl flex items-center justify-center mb-8 shadow-[0_5px_15px_rgba(95,87,162,0.4)] group-hover:scale-110 transition-transform duration-300">
+                                <span class="material-icons text-3xl">eco</span>
+                            </div>
+                            <h4
+                                class="text-xl font-bold text-blanco mb-4 font-display group-hover:text-morado transition-colors">
+                                Sostenibilidad Ambiental</h4>
+                            <p class="text-blanco/70 leading-relaxed text-sm">Transición ecológica con Política de
+                                Sostenibilidad, currículos verdes, cero papel e infraestructura sostenible.</p>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 2 -->
+                    <div
+                        class="group bg-blanco/5 backdrop-blur-lg p-1 rounded-2xl border border-blanco/10 hover:border-morado hover:-translate-y-3 transition-all duration-500 shadow-xl">
+                        <div class="h-full p-8 rounded-xl relative overflow-hidden">
+                            <div
+                                class="absolute -right-10 -top-10 w-40 h-40 bg-morado/20 rounded-full blur-2xl group-hover:bg-morado/40 transition-colors">
+                            </div>
+                            <div
+                                class="w-16 h-16 bg-morado text-blanco rounded-xl flex items-center justify-center mb-8 shadow-[0_5px_15px_rgba(95,87,162,0.4)] group-hover:scale-110 transition-transform duration-300">
+                                <span class="material-icons text-3xl">diversity_1</span>
+                            </div>
+                            <h4
+                                class="text-xl font-bold text-blanco mb-4 font-display group-hover:text-morado transition-colors">
+                                Educación y paz</h4>
+                            <p class="text-blanco/70 leading-relaxed text-sm">Fortalecer la Unidad Especial de Paz,
+                                trabajo con víctimas/firmantes y vinculación a procesos de negociación nacional.</p>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 3 -->
+                    <div
+                        class="group bg-blanco/5 backdrop-blur-lg p-1 rounded-2xl border border-blanco/10 hover:border-morado hover:-translate-y-3 transition-all duration-500 shadow-xl">
+                        <div class="h-full p-8 rounded-xl relative overflow-hidden">
+                            <div
+                                class="absolute -right-10 -top-10 w-40 h-40 bg-morado/20 rounded-full blur-2xl group-hover:bg-morado/40 transition-colors">
+                            </div>
+                            <div
+                                class="w-16 h-16 bg-morado text-blanco rounded-xl flex items-center justify-center mb-8 shadow-[0_5px_15px_rgba(95,87,162,0.4)] group-hover:scale-110 transition-transform duration-300">
+                                <span class="material-icons text-3xl">public</span>
+                            </div>
+                            <h4
+                                class="text-xl font-bold text-blanco mb-4 font-display group-hover:text-morado transition-colors">
+                                Regionalización y gestión</h4>
+                            <p class="text-blanco/70 leading-relaxed text-sm">Justicia socioespacial,
+                                internacionalización (doble titulación) y gestión administrativa digital al servicio de
+                                la academia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biografía y Trayectoria -->
+    <section
+        class="py-24 bg-gradient-to-br from-verde to-morado_oscuro border-y border-blanco/10 relative overflow-hidden"
+        id="trayectoria">
+        <!-- Patrón de fondo -->
+        <div
+            class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 mix-blend-overlay">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-display font-black text-blanco mb-6 drop-shadow-md">Hoja de Vida y
+                    <span class="text-morado">Trayectoria</span></h2>
+                <div class="mt-8">
+                    <a href="hoja de vida.pdf" target="_blank"
+                        class="inline-flex items-center gap-2 bg-blanco text-verde_oscuro px-8 py-4 rounded-xl font-bold hover:bg-morado hover:text-blanco transition-all duration-300 shadow-xl hover:shadow-morado/30">
+                        <span class="material-icons">download</span>
+                        Descargar Hoja de Vida Completa
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-start mb-20">
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-4 bg-blanco/10 rounded-3xl blur-lg opacity-50 group-hover:opacity-100 transition duration-700">
+                    </div>
+                    <div
+                        class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative border-2 border-blanco/20 bg-verde_oscuro">
+                        <img alt="John Mario Muñoz"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                            src="IMG_6505.JPG.jpeg" onerror="this.src='IMG_0229.JPG.jpeg'" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-verde_oscuro via-transparent to-transparent">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- Perfil -->
+                    <div class="mb-10">
+                        <h3 class="text-2xl font-bold text-blanco mb-4 font-display border-b border-morado/50 pb-2">
+                            Información Personal y Perfil</h3>
+                        <p class="text-blanco/80 font-light leading-relaxed">Nacido en Ituango, Antioquia (1970).
+                            Destacado académico, investigador y líder profesoral con dominio de italiano e inglés.
+                            Cuenta con una trayectoria de cerca de 25 años como docente e investigador en la Universidad
+                            de Antioquia.</p>
+                    </div>
+
+                    <!-- Formación -->
+                    <div class="mb-10">
+                        <h3 class="text-2xl font-bold text-blanco mb-4 font-display border-b border-morado/50 pb-2">
+                            Formación Académica</h3>
+                        <ul class="space-y-4 text-blanco/80 font-light">
+                            <li class="flex items-start gap-3"><span
+                                    class="material-icons text-morado mt-1">school</span> <span><strong>Doctor en
+                                        Administración Pública y Gobierno:</strong> Universidad Complutense de Madrid,
+                                    España (2014).</span></li>
+                            <li class="flex items-start gap-3"><span
+                                    class="material-icons text-morado mt-1">school</span> <span><strong>Magíster en
+                                        Ciencia Política:</strong> Universidad de Antioquia (2003).</span></li>
+                            <li class="flex items-start gap-3"><span
+                                    class="material-icons text-morado mt-1">verified</span> <span>Diversos estudios
+                                    complementarios en pedagogía y resolución de conflictos.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Experiencia -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-blanco mb-4 font-display border-b border-morado/50 pb-2">
+                            Experiencia Profesional y Administrativa</h3>
+                        <p class="text-blanco/80 font-light leading-relaxed mb-4">Docente e investigador en la
+                            <strong>UdeA</strong> desde 1999 (de planta desde 2003). También ha sido docente en UNAULA,
+                            ITM, ESAP y Colmayor. Principales cargos en la UdeA:</p>
+                        <ul class="space-y-3 text-blanco/80 font-light">
+                            <li class="flex items-center gap-3"><span
+                                    class="w-2 h-2 bg-morado rounded-full"></span>Decano de la Facultad de Ciencias
+                                Sociales y Humanas (2019-2022).</li>
+                            <li class="flex items-center gap-3"><span
+                                    class="w-2 h-2 bg-morado rounded-full"></span>Director del CELyC (2015-2017).</li>
+                            <li class="flex items-center gap-3"><span class="w-2 h-2 bg-morado rounded-full"></span>Jefe
+                                del Departamento de Trabajo Social.</li>
+                            <li class="flex items-center gap-3"><span
+                                    class="w-2 h-2 bg-morado rounded-full"></span>Coordinador del Grupo Cultura,
+                                Política y Desarrollo Social.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Producción -->
+                <div
+                    class="bg-blanco/5 backdrop-blur-lg p-8 rounded-2xl border border-blanco/10 hover:border-morado hover:-translate-y-2 transition-all duration-300 shadow-xl">
+                    <div class="w-12 h-12 bg-morado text-blanco rounded-xl flex items-center justify-center mb-6"><span
+                            class="material-icons">library_books</span></div>
+                    <h4 class="text-xl font-bold text-blanco mb-3 font-display">Producción Intelectual</h4>
+                    <p class="text-blanco/70 text-sm leading-relaxed">Autor/compilador de <strong>más de 10
+                            libros</strong> ("Fronteras invisibles", "Polifonía para pensar una pandemia"). Amplia
+                        escritura en revistas especializadas sobre conflictos y tutor de múltiples tesis de pregrado,
+                        maestría y doctorado.</p>
+                </div>
+
+                <!-- Participación Científica -->
+                <div
+                    class="bg-blanco/5 backdrop-blur-lg p-8 rounded-2xl border border-blanco/10 hover:border-morado hover:-translate-y-2 transition-all duration-300 shadow-xl">
+                    <div class="w-12 h-12 bg-morado text-blanco rounded-xl flex items-center justify-center mb-6"><span
+                            class="material-icons">travel_explore</span></div>
+                    <h4 class="text-xl font-bold text-blanco mb-3 font-display">Participación y Proyectos</h4>
+                    <p class="text-blanco/70 text-sm leading-relaxed">Organizador y ponente en decenas de congresos.
+                        Liderazgo en foros sobre paz territorial y proyectos de investigación/extensión como el Plan de
+                        Desarrollo Cultural de Bello.</p>
+                </div>
+
+                <!-- Premios -->
+                <div
+                    class="bg-blanco/5 backdrop-blur-lg p-8 rounded-2xl border border-blanco/10 hover:border-morado hover:-translate-y-2 transition-all duration-300 shadow-xl">
+                    <div class="w-12 h-12 bg-morado text-blanco rounded-xl flex items-center justify-center mb-6"><span
+                            class="material-icons">emoji_events</span></div>
+                    <h4 class="text-xl font-bold text-blanco mb-3 font-display">Premios y Reconocimientos</h4>
+                    <ul class="text-blanco/70 text-sm space-y-2">
+                        <li>• Distinción por la calidad y excelencia (FCSH UdeA, 2014).</li>
+                        <li>• Certificación Corporación Viva la Ciudadanía por aportes a la Comisión de la Verdad
+                            (2023).</li>
+                        <li>• Reconocimiento a la gestión cultural (Alcaldía de Bello, 1998).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activismo -->
+    <section class="py-24 bg-morado_oscuro relative" id="activismo">
+        <div
+            class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 mix-blend-overlay">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-display font-black text-blanco mb-6 drop-shadow-md">Activismo y
+                        <span class="text-verde">Liderazgo</span></h2>
+                    <p class="text-blanco/80 text-lg leading-relaxed mb-10">Una vida dedicada a la firme defensa de la
+                        educación pública y los derechos profesorales.</p>
+
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-5">
+                            <div
+                                class="w-14 h-14 bg-verde text-blanco rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                                <span class="material-icons">record_voice_over</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-blanco mb-2 font-display">Liderazgo Profesoral</h4>
+                                <p class="text-blanco/70 leading-relaxed"><strong>Presidente de ASOPRUDEA</strong>
+                                    (Asociación de Profesores de la Universidad de Antioquia), representando firmemente
+                                    los intereses del estamento docente frente a las diferentes instancias.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-5">
+                            <div
+                                class="w-14 h-14 bg-verde text-blanco rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                                <span class="material-icons">forum</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-blanco mb-2 font-display">Diálogo Nacional</h4>
+                                <p class="text-blanco/70 leading-relaxed">Vocero histórico y representante destacado en
+                                    la <strong>Mesa Nacional de Diálogo</strong> con el Gobierno Nacional durante las
+                                    movilizaciones por la educación superior en 2018.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-5">
+                            <div
+                                class="w-14 h-14 bg-verde text-blanco rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                                <span class="material-icons">assignment_turned_in</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-blanco mb-2 font-display">Incidencia Académica</h4>
+                                <p class="text-blanco/70 leading-relaxed">Integró el comité editorial de la Revista de
+                                    Trabajo Social aportando a la divulgación científica, y se desempeña como Par
+                                    Evaluador del Consejo Nacional de Acreditación (CNA).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute inset-0 bg-verde/20 rounded-3xl blur-2xl transform rotate-3"></div>
+                    <div
+                        class="relative bg-blanco/5 border border-blanco/10 p-10 rounded-3xl backdrop-blur-md shadow-2xl">
+                        <span class="material-icons text-6xl text-morado mb-6">campaign</span>
+                        <blockquote class="text-2xl font-light text-blanco italic leading-relaxed mb-8">
+                            "La educación pública no se vende, se defiende. Nuestro compromiso es garantizar que la
+                            Universidad siga siendo el principal motor de transformación social del país."
+                        </blockquote>
+                        <div class="flex items-center gap-4 border-t border-blanco/10 pt-6">
+                            <div
+                                class="w-12 h-12 rounded-full bg-verde flex items-center justify-center text-blanco font-bold text-xl shadow-lg">
+                                JM</div>
+                            <div>
+                                <p class="text-blanco font-bold text-lg">John Mario Muñoz Lopera</p>
+                                <p class="text-blanco/50 text-sm uppercase tracking-wider font-bold">Candidato a la
+                                    Rectoría</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer oscuro -->
+    <footer class="bg-verde_oscuro pt-20 pb-10 border-t border-blanco/10" id="contacto">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-20">
+                <div class="md:col-span-2">
+                    <img src="../diseños logos colores/logos aplicados_Mesa de trabajo 1 copia 2.png" alt="Logo"
+                        class="h-48 mb-8 object-contain max-w-full">
+                    <h3 class="text-3xl font-display font-black mb-6 text-blanco drop-shadow-md">ÚNETE AL <span
+                            class="text-morado">CAMBIO</span></h3>
+                    <p class="text-blanco/70 max-w-md mb-8 text-lg font-light leading-relaxed">
+                        "Por una Universidad comprometida con la ciencia para la transformación social". Únete a este
+                        proyecto por el futuro de la UdeA.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="w-12 h-12 rounded-xl bg-blanco/10 border border-blanco/20 text-blanco flex items-center justify-center hover:bg-morado hover:border-morado hover:-translate-y-1 transition-all duration-300 shadow-lg"
+                            href="https://www.facebook.com/john.mario.munoz.445978" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="material-icons">facebook</span>
+                        </a>
+                        <a class="w-12 h-12 rounded-xl bg-blanco/10 border border-blanco/20 text-blanco flex items-center justify-center hover:bg-morado hover:border-morado hover:-translate-y-1 transition-all duration-300 shadow-lg"
+                            href="mailto:contacto@johnmariorector.com">
+                            <span class="material-icons">alternate_email</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-sm mb-6 text-blanco/50 uppercase tracking-[0.2em] pb-2 inline-block">
+                        Navegación</h4>
+                    <ul class="space-y-4 text-blanco/80 font-light">
+                        <li><a class="hover:text-morado transition-colors duration-300 flex items-center gap-3"
+                                href="#inicio"><span class="w-1.5 h-1.5 bg-morado rounded-full"></span>Inicio</a></li>
+                        <li><a class="hover:text-morado transition-colors duration-300 flex items-center gap-3"
+                                href="#propuestas"><span class="w-1.5 h-1.5 bg-morado rounded-full"></span>Plan de
+                                Gobierno</a></li>
+                        <li><a class="hover:text-morado transition-colors duration-300 flex items-center gap-3"
+                                href="#trayectoria"><span
+                                    class="w-1.5 h-1.5 bg-morado rounded-full"></span>Biografía</a></li>
+                        <li><a class="hover:text-morado transition-colors duration-300 flex items-center gap-3"
+                                href="#activismo"><span class="w-1.5 h-1.5 bg-morado rounded-full"></span>Activismo</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-sm mb-6 text-blanco/50 uppercase tracking-[0.2em] pb-2 inline-block">
+                        Contacto</h4>
+                    <ul class="space-y-6 text-blanco/80 font-light">
+                        <li class="flex items-start gap-4 group">
+                            <span
+                                class="material-icons text-morado group-hover:scale-110 transition-transform">mail</span>
+                            <div>
+                                <span
+                                    class="block text-[10px] uppercase text-blanco/50 font-bold tracking-wider mb-1">Email
+                                    Institucional</span>
+                                <a href="mailto:john.munoz@udea.edu.co"
+                                    class="hover:text-blanco transition-colors">john.munoz@udea.edu.co</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4 group">
+                            <span
+                                class="material-icons text-morado group-hover:scale-110 transition-transform">campaign</span>
+                            <div>
+                                <span
+                                    class="block text-[10px] uppercase text-blanco/50 font-bold tracking-wider mb-1">Campaña</span>
+                                <a href="mailto:contacto@johnmariorector.com"
+                                    class="hover:text-blanco transition-colors">contacto@johnmariorector.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-blanco/10 pt-10 text-center text-blanco/40 text-xs tracking-wider flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>© 2026 JOHN MARIO MUÑOZ LOPERA - RECTORÍA UNIVERSIDAD DE ANTIOQUIA.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
