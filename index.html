@@ -614,6 +614,106 @@
         </div>
     </section>
 
+    <!-- Sección de Videos (Multimedia) -->
+    <section class="py-24 bg-negro text-blanco border-t border-blanco/10" id="multimedia">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-morado font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Multimedia</span>
+                <h2 class="text-4xl md:text-5xl font-display font-black mb-6">Galería de Videos</h2>
+                <p class="text-xl text-blanco/70 font-light">
+                    Conoce más sobre nuestras propuestas, entrevistas y participaciones en vivo.
+                </p>
+            </div>
+
+            <!-- Contenedor de Videos (Carrusel/Carrete) -->
+            <div class="relative group/carousel">
+                
+                <!-- Botón de scroll Izquierdo -->
+                <button onclick="document.getElementById('video-carousel').scrollBy({left: -400, behavior: 'smooth'})" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 bg-morado text-blanco w-12 h-12 flex items-center justify-center rounded-full shadow-lg opacity-0 group-hover/carousel:opacity-100 transition-all hover:scale-110 hidden md:flex border-2 border-blanco/10 hover:border-blanco/30">
+                    <span class="material-icons">chevron_left</span>
+                </button>
+
+                <!-- Área scrolleable -->
+                <div id="video-carousel" class="flex overflow-x-auto gap-6 pb-8 pt-4 px-4 -mx-4 snap-x snap-mandatory scroll-smooth" style="scrollbar-width: none; -ms-overflow-style: none;">
+                    <!-- Bloque CSS en línea para ocultar scrollbar en Webkit -->
+                    <style>
+                        #video-carousel::-webkit-scrollbar { display: none; }
+                    </style>
+
+                    <!-- Tarjeta de Video 1 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-verde_oscuro rounded-2xl overflow-hidden shadow-2xl border border-blanco/5 hover:border-morado transition-all duration-300 group hover:-translate-y-2">
+                        <!-- Contenedor responsivo 16:9 para el iframe -->
+                        <div class="relative pb-[56.25%] h-0 bg-negro">
+                            <!-- INSTRUCCIÓN: Reemplaza la URL en "src" por el enlace "embed" de tu video de YouTube -->
+                            <iframe 
+                                src="https://www.youtube.com/embed/QU0BwiR2HxE?si=SzYO9hM3grEIvbQ5" 
+                                title="YouTube video player" 
+                                class="absolute top-0 left-0 w-full h-full" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold mb-2 group-hover:text-morado transition-colors">Entrevista / Propuesta</h3>
+                            <p class="text-blanco/60 text-sm leading-relaxed">Agrega aquí una breve descripción del evento, entrevista o propuesta que se presenta en este video.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta de Video 2 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-verde_oscuro rounded-2xl overflow-hidden shadow-2xl border border-blanco/5 hover:border-morado transition-all duration-300 group hover:-translate-y-2">
+                        <div class="relative pb-[56.25%] h-0 bg-negro/50 border-b border-blanco/5 flex items-center justify-center">
+                            <!-- Aquí puedes poner otro iframe cuando tengas más videos. Por ahora muestra un mensaje -->
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-blanco/30">
+                                <span class="material-icons text-4xl mb-2">play_circle_outline</span>
+                                <span class="text-xs uppercase tracking-widest">Espacio disponible</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold mb-2 text-blanco/50">Próximamente</h3>
+                            <p class="text-blanco/40 text-sm leading-relaxed">Nuevo contenido multimedia será agregado en este espacio.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta de Video 3 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-verde_oscuro rounded-2xl overflow-hidden shadow-2xl border border-blanco/5 hover:border-morado transition-all duration-300 group hover:-translate-y-2">
+                        <div class="relative pb-[56.25%] h-0 bg-negro/50 border-b border-blanco/5 flex items-center justify-center">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-blanco/30">
+                                <span class="material-icons text-4xl mb-2">play_circle_outline</span>
+                                <span class="text-xs uppercase tracking-widest">Espacio disponible</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold mb-2 text-blanco/50">Próximamente</h3>
+                            <p class="text-blanco/40 text-sm leading-relaxed">Nuevo contenido multimedia será agregado en este espacio.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Tarjeta de Video 4 (Para que se note el carrusel) -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-verde_oscuro rounded-2xl overflow-hidden shadow-2xl border border-blanco/5 hover:border-morado transition-all duration-300 group hover:-translate-y-2">
+                        <div class="relative pb-[56.25%] h-0 bg-negro/50 border-b border-blanco/5 flex items-center justify-center">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-blanco/30">
+                                <span class="material-icons text-4xl mb-2">play_circle_outline</span>
+                                <span class="text-xs uppercase tracking-widest">Espacio disponible</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold mb-2 text-blanco/50">Próximamente</h3>
+                            <p class="text-blanco/40 text-sm leading-relaxed">Nuevo contenido multimedia será agregado en este espacio.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Botón de scroll Derecho -->
+                <button onclick="document.getElementById('video-carousel').scrollBy({left: 400, behavior: 'smooth'})" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 bg-morado text-blanco w-12 h-12 flex items-center justify-center rounded-full shadow-lg opacity-0 group-hover/carousel:opacity-100 transition-all hover:scale-110 hidden md:flex border-2 border-blanco/10 hover:border-blanco/30">
+                    <span class="material-icons">chevron_right</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer oscuro -->
     <footer class="bg-verde_oscuro pt-20 pb-10 border-t border-blanco/10" id="contacto">
         <div class="max-w-7xl mx-auto px-6">
