@@ -181,21 +181,173 @@
     <!-- Plan de Gobierno: Fondo Verde Oscuro -->
     <section class="py-24 bg-verde_oscuro relative" id="propuestas">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-20 text-center">
+            <div class="mb-16 text-center">
                 <span
-                    class="text-blanco bg-morado px-4 py-2 rounded-full text-sm font-bold tracking-[0.3em] uppercase mb-6 inline-block shadow-lg">Plan
-                    2026-2029</span>
+                    class="text-blanco bg-morado px-4 py-2 rounded-full text-sm font-bold tracking-[0.3em] uppercase mb-6 inline-block shadow-lg">Propuestas de Gobierno</span>
                 <h2 class="text-4xl md:text-5xl font-display font-black text-blanco mb-6 drop-shadow-md">Por una
                     Universidad comprometida con la <br><span class="text-morado">ciencia para la transformación
                         social</span></h2>
-                <p class="text-blanco/70 text-lg max-w-3xl mx-auto font-light">Enfoques territoriales, de diversidades,
-                    participativos y de género, dividiéndose en nueve retos agrupados en tres categorías.</p>
-                <div class="mt-10">
-                    <a href="plangobierno.pdf" target="_blank"
-                        class="inline-flex items-center gap-2 bg-blanco text-verde_oscuro px-8 py-4 rounded-xl font-bold hover:bg-morado hover:text-blanco transition-all duration-300 shadow-xl hover:shadow-morado/30">
-                        <span class="material-icons">picture_as_pdf</span>
-                        Leer Plan de Gobierno Completo
-                    </a>
+                <p class="text-blanco/70 text-lg max-w-3xl mx-auto font-light mb-12">Enfoques territoriales, de diversidades,
+                    participativos y de género, estructurados para toda la comunidad universitaria.</p>
+
+                <!-- Propuesta Completa a la Rectoría Destacada -->
+                <div class="max-w-4xl mx-auto bg-gradient-to-r from-morado/20 to-verde/10 backdrop-blur-md rounded-3xl p-8 border border-blanco/10 shadow-2xl mb-16 relative overflow-hidden group hover:border-morado/30 transition-all duration-300">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-morado/25 rounded-full blur-2xl group-hover:bg-morado/35 transition-colors"></div>
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+                        <div class="text-left md:max-w-xl">
+                            <span class="text-morado text-xs font-bold uppercase tracking-widest block mb-2">Visión Programática Completa</span>
+                            <h3 class="text-2xl md:text-3xl font-display font-black text-blanco mb-3">Propuesta Rectoral Completa UdeA</h3>
+                            <p class="text-blanco/80 text-sm font-light leading-relaxed">
+                                El marco estratégico global para liderar la UdeA en el período 2026-2029, consolidando 9 retos estratégicos, misionales y transversales para la transformación social y científica.
+                            </p>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4 shrink-0">
+                            <a href="plangobierno.pdf" target="_blank"
+                                class="inline-flex items-center justify-center gap-2 bg-blanco text-verde_oscuro px-6 py-3.5 rounded-xl font-bold hover:bg-morado hover:text-blanco transition-all duration-300 shadow-xl hover:shadow-morado/20">
+                                <span class="material-icons">description</span>
+                                Plan de Gobierno
+                            </a>
+                            <a href="Propuesta_completa_rectoria_JohnMario.pdf" target="_blank"
+                                class="inline-flex items-center justify-center gap-2 bg-morado text-blanco px-6 py-3.5 rounded-xl font-bold hover:bg-blanco hover:text-verde_oscuro transition-all duration-300 shadow-xl hover:shadow-blanco/10">
+                                <span class="material-icons">picture_as_pdf</span>
+                                Propuesta Completa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Selector de Propuestas por Población / Estamentos -->
+                <div class="mb-8">
+                    <h3 class="text-2xl font-display font-black text-blanco mb-6">Propuestas Específicas por Estamentos</h3>
+                    
+                    <!-- Menú de Pestañas -->
+                    <div class="flex flex-wrap justify-center gap-3 mb-10 max-w-5xl mx-auto">
+                        <button onclick="switchTab('estudiantes')" id="tab-btn-estudiantes" class="tab-btn active inline-flex items-center gap-2 px-5 py-3 rounded-full font-bold text-xs uppercase tracking-wider border border-blanco/10 bg-blanco/5 hover:bg-blanco/10 transition-all duration-300">
+                            <span class="material-icons text-sm">school</span> Estudiantes
+                        </button>
+                        <button onclick="switchTab('docentes')" id="tab-btn-docentes" class="tab-btn inline-flex items-center gap-2 px-5 py-3 rounded-full font-bold text-xs uppercase tracking-wider border border-blanco/10 bg-blanco/5 hover:bg-blanco/10 transition-all duration-300">
+                            <span class="material-icons text-sm">psychology</span> Docentes
+                        </button>
+                        <button onclick="switchTab('administrativos')" id="tab-btn-administrativos" class="tab-btn inline-flex items-center gap-2 px-5 py-3 rounded-full font-bold text-xs uppercase tracking-wider border border-blanco/10 bg-blanco/5 hover:bg-blanco/10 transition-all duration-300">
+                            <span class="material-icons text-sm">badge</span> Administrativos
+                        </button>
+                        <button onclick="switchTab('egresados')" id="tab-btn-egresados" class="tab-btn inline-flex items-center gap-2 px-5 py-3 rounded-full font-bold text-xs uppercase tracking-wider border border-blanco/10 bg-blanco/5 hover:bg-blanco/10 transition-all duration-300">
+                            <span class="material-icons text-sm">workspace_premium</span> Egresados
+                        </button>
+                        <button onclick="switchTab('jubilados')" id="tab-btn-jubilados" class="tab-btn inline-flex items-center gap-2 px-5 py-3 rounded-full font-bold text-xs uppercase tracking-wider border border-blanco/10 bg-blanco/5 hover:bg-blanco/10 transition-all duration-300">
+                            <span class="material-icons text-sm">volunteer_activism</span> Jubilados
+                        </button>
+                    </div>
+
+                    <!-- Contenedores de Contenido de Estamentos -->
+                    <div class="max-w-4xl mx-auto bg-blanco/5 backdrop-blur-lg rounded-3xl p-8 border border-blanco/10 shadow-2xl text-left relative min-h-[350px] flex flex-col justify-between">
+                        
+                        <!-- ESTUDIANTES -->
+                        <div id="tab-content-estudiantes" class="tab-content space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-morado text-blanco rounded-xl flex items-center justify-center shadow-lg"><span class="material-icons text-2xl">school</span></div>
+                                <div>
+                                    <h4 class="text-2xl font-display font-black text-blanco">Compromisos con el Estudiantado</h4>
+                                    <p class="text-morado font-semibold text-sm">"El estudiante como centro y razón de ser de la universidad pública"</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-3 text-blanco/80 font-light text-sm md:text-base">
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Salud Mental Integral:</strong> Implementación de una política de salud mental robusta en tres niveles coordinada con las redes departamentales de salud.</span></li>
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Permanencia Estudiantil:</strong> Fortalecimiento del bienestar en campus mediante apoyos alimentarios, transporte y residencia con criterios de justicia social.</span></li>
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Participación Democrática:</strong> Voz, voto y decisión efectiva en los espacios de deliberación y gobierno para una ciudadanía estudiantil real.</span></li>
+                            </ul>
+                            <div class="pt-4 border-t border-blanco/10 flex justify-end">
+                                <a href="Propuesta_Rectoral_Estudiantes_JhonMario.pdf" target="_blank" class="inline-flex items-center gap-2 bg-morado text-blanco px-6 py-3 rounded-xl font-bold hover:bg-blanco hover:text-verde_oscuro transition-all duration-300 shadow-lg">
+                                    <span class="material-icons">download</span> Descargar Propuesta Estudiantes (PDF)
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- DOCENTES -->
+                        <div id="tab-content-docentes" class="tab-content hidden space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-morado text-blanco rounded-xl flex items-center justify-center shadow-lg"><span class="material-icons text-2xl">psychology</span></div>
+                                <div>
+                                    <h4 class="text-2xl font-display font-black text-blanco">Compromisos con el Profesorado</h4>
+                                    <p class="text-morado font-semibold text-sm">"El profesorado como corazón intelectual de la misión universitaria"</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-3 text-blanco/80 font-light text-sm md:text-base">
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Dignidad y Estabilidad Laboral:</strong> Rechazo contundente a catalogar o tratar los derechos del profesorado como una variable de costo deficitario.</span></li>
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Libertad de Cátedra e Investigación:</strong> Habilitar condiciones de excelencia y simplificación de trámites burocráticos para dinamizar el trabajo intelectual.</span></li>
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Optimización del Gasto Administrativo:</strong> Priorizar la contención de gastos en el ámbito burocrático, preservando los derechos laborales del profesorado.</span></li>
+                            </ul>
+                            <div class="pt-4 border-t border-blanco/10 flex justify-end">
+                                <a href="Propuesta_Rectoral_Docentes_JhonMario.pdf" target="_blank" class="inline-flex items-center gap-2 bg-morado text-blanco px-6 py-3 rounded-xl font-bold hover:bg-blanco hover:text-verde_oscuro transition-all duration-300 shadow-lg">
+                                    <span class="material-icons">download</span> Descargar Propuesta Docentes (PDF)
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- ADMINISTRATIVOS -->
+                        <div id="tab-content-administrativos" class="tab-content hidden space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-morado text-blanco rounded-xl flex items-center justify-center shadow-lg"><span class="material-icons text-2xl">badge</span></div>
+                                <div>
+                                    <h4 class="text-2xl font-display font-black text-blanco">Compromisos con el Personal Administrativo</h4>
+                                    <p class="text-morado font-semibold text-sm">"La administración al servicio de la academia y sus estamentos"</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-3 text-blanco/80 font-light text-sm md:text-base">
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Soporte Académico Vital:</strong> Reconocimiento estratégico de los administrativos como la columna vertebral que viabiliza los tres ejes misionales.</span></li>
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Clima y Bienestar Organizacional:</strong> Programas permanentes de calidad de vida laboral, salud mental institucional y ambientes incluyentes.</span></li>
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Amortiguamiento Social:</strong> Medidas de protección para sectores vulnerables ante reestructuraciones o transformaciones del Plan de Mejoramiento del MEN.</span></li>
+                            </ul>
+                            <div class="pt-4 border-t border-blanco/10 flex justify-end">
+                                <a href="Propuesta_Rectoral_Administrativos_JhonMario.pdf" target="_blank" class="inline-flex items-center gap-2 bg-morado text-blanco px-6 py-3 rounded-xl font-bold hover:bg-blanco hover:text-verde_oscuro transition-all duration-300 shadow-lg">
+                                    <span class="material-icons">download</span> Descargar Propuesta Administrativos (PDF)
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- EGRESADOS -->
+                        <div id="tab-content-egresados" class="tab-content hidden space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-morado text-blanco rounded-xl flex items-center justify-center shadow-lg"><span class="material-icons text-2xl">workspace_premium</span></div>
+                                <div>
+                                    <h4 class="text-2xl font-display font-black text-blanco">Compromisos con Egresados y Egresadas</h4>
+                                    <p class="text-morado font-semibold text-sm">"El egresado como embajador y actor estratégico en el territorio"</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-3 text-blanco/80 font-light text-sm md:text-base">
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Portadores del Saber Universitario:</strong> Integración activa de los egresados como dinamizadores del conocimiento en empresas y comunidades.</span></li>
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Vínculo Orgánico Continuo:</strong> Acceso permanente a cualificación académica, programas de actualización y formación de posgrado.</span></li>
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Medición e Impacto Territorial:</strong> Creación de un sistema robusto de seguimiento de egresados para adaptar y mejorar los diseños curriculares.</span></li>
+                            </ul>
+                            <div class="pt-4 border-t border-blanco/10 flex justify-end">
+                                <a href="Propuesta_Rectoral_Egresados_JhonMario.pdf" target="_blank" class="inline-flex items-center gap-2 bg-morado text-blanco px-6 py-3 rounded-xl font-bold hover:bg-blanco hover:text-verde_oscuro transition-all duration-300 shadow-lg">
+                                    <span class="material-icons">download</span> Descargar Propuesta Egresados (PDF)
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- JUBILADOS -->
+                        <div id="tab-content-jubilados" class="tab-content hidden space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-morado text-blanco rounded-xl flex items-center justify-center shadow-lg"><span class="material-icons text-2xl">volunteer_activism</span></div>
+                                <div>
+                                    <h4 class="text-2xl font-display font-black text-blanco">Compromisos con Jubilados y Jubiladas</h4>
+                                    <p class="text-morado font-semibold text-sm">"Los jubilados y jubiladas como memoria viva del patrimonio UdeA"</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-3 text-blanco/80 font-light text-sm md:text-base">
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Reconocimiento Histórico:</strong> Inclusión formal de quienes sostuvieron y formaron el prestigio de la UdeA por décadas.</span></li>
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Pacto de Convivencia:</strong> Convocatoria activa del estamento de jubilados a asambleas estamentales y deliberaciones normativas.</span></li>
+                                <li class="flex items-start gap-3"><span class="material-icons text-morado text-sm mt-1">check_circle</span> <span><strong>Pertenencia y Participación:</strong> Garantizar accesos, servicios institucionales y canales de participación intelectual permanentes.</span></li>
+                            </ul>
+                            <div class="pt-4 border-t border-blanco/10 flex justify-end">
+                                <a href="Propuesta_Rectoral_Jubilados_JhonMario.pdf" target="_blank" class="inline-flex items-center gap-2 bg-morado text-blanco px-6 py-3 rounded-xl font-bold hover:bg-blanco hover:text-verde_oscuro transition-all duration-300 shadow-lg">
+                                    <span class="material-icons">download</span> Descargar Propuesta Jubilados (PDF)
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
@@ -927,6 +1079,41 @@
     </div>
 
     <script>
+        function switchTab(tabId) {
+            // Ocultar todos los contenidos de pestaña
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.add('hidden');
+            });
+            
+            // Desactivar todos los botones de pestaña
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('active', 'bg-morado', 'text-blanco');
+                btn.classList.add('bg-blanco/5', 'text-blanco');
+            });
+            
+            // Mostrar contenido activo
+            const activeContent = document.getElementById('tab-content-' + tabId);
+            if (activeContent) {
+                activeContent.classList.remove('hidden');
+                activeContent.classList.add('animate-float'); // sutil efecto dinámico
+                setTimeout(() => activeContent.classList.remove('animate-float'), 1000);
+            }
+            
+            // Activar botón seleccionado
+            const activeBtn = document.getElementById('tab-btn-' + tabId);
+            if (activeBtn) {
+                activeBtn.classList.add('active', 'bg-morado', 'text-blanco');
+                activeBtn.classList.remove('bg-blanco/5');
+            }
+        }
+
+        // Inicializar pestaña por defecto
+        window.addEventListener('DOMContentLoaded', () => {
+            switchTab('estudiantes');
+        });
+
         function openModal() {
             const modal = document.getElementById('modal-produccion');
             modal.classList.remove('hidden');
